@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9AAEC0"/></marker>
+<marker id="arrowTeal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3FB3CF"/></marker>
+<pattern id="hatch" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="9" height="9" fill="#FF7A66" fill-opacity="0.18"/><line x1="0" y1="0" x2="0" y2="9" stroke="#FF7A66" stroke-width="3" stroke-opacity="0.55"/></pattern>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1200" height="560" rx="18" fill="#0B1B2B"/>
+<text x="40" y="46" font-size="12" fill="#3FB3CF" font-weight="500" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace" letter-spacing="3">SCOUT · 14-STEP PIPELINE</text>
+<text x="40" y="78" font-size="23" fill="#E6EEF5" font-weight="600" text-anchor="start">Two tracks with opposite weaknesses, fused at step 7</text>
+<path d="M40,112 L40,104 L760,104 L760,112" fill="none" stroke="#5F7488" stroke-width="1.5"/>
+<text x="48" y="98" font-size="11" fill="#9AAEC0" font-weight="500" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace" letter-spacing="1">IN FLIGHT · steps 1–6 stream while the drone is airborne</text>
+<path d="M790,112 L790,104 L1160,104 L1160,112" fill="none" stroke="#5F7488" stroke-width="1.5"/>
+<text x="798" y="98" font-size="11" fill="#9AAEC0" font-weight="500" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace" letter-spacing="1">AFTER LANDING · steps 7–14</text>
+<text x="420" y="134" font-size="10.5" fill="#3FB3CF" font-weight="500" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace" letter-spacing="1">TRACK A · ALGORITHMIC GEOMETRY — accurate, full of holes</text>
+<text x="420" y="464" font-size="10.5" fill="#FF7A66" font-weight="500" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace" letter-spacing="1">TRACK B · LEARNED PRIORS — complete, no scale</text>
+<rect x="40" y="244" width="160" height="100" rx="12" fill="#10263A" stroke="#21405C" stroke-width="1.5"/>
+<text x="54" y="268" font-size="11" fill="#3FB3CF" font-weight="600" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace" letter-spacing="1">01</text>
+<text x="54" y="290" font-size="15" fill="#E6EEF5" font-weight="600" text-anchor="start">Ingest</text>
+<text x="54" y="331" font-size="10.5" fill="#9AAEC0" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace">FFmpeg · SRT · KLV</text>
+<rect x="222" y="244" width="160" height="100" rx="12" fill="#10263A" stroke="#21405C" stroke-width="1.5"/>
+<text x="236" y="268" font-size="11" fill="#3FB3CF" font-weight="600" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace" letter-spacing="1">02</text>
+<text x="236" y="290" font-size="15" fill="#E6EEF5" font-weight="600" text-anchor="start">Keyframe</text>
+<text x="236" y="309" font-size="15" fill="#E6EEF5" font-weight="600" text-anchor="start">selection</text>
+<text x="236" y="331" font-size="10.5" fill="#9AAEC0" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace">sharp · glare · ΔGPS</text>
+<rect x="420" y="146" width="160" height="100" rx="12" fill="#10263A" stroke="#21405C" stroke-width="1.5"/>
+<text x="434" y="170" font-size="11" fill="#3FB3CF" font-weight="600" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace" letter-spacing="1">03</text>
+<text x="434" y="192" font-size="15" fill="#E6EEF5" font-weight="600" text-anchor="start">Tie points</text>
+<text x="434" y="233" font-size="10.5" fill="#9AAEC0" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace">SuperPoint · LightGlue</text>
+<rect x="600" y="146" width="160" height="100" rx="12" fill="#10263A" stroke="#21405C" stroke-width="1.5"/>
+<text x="614" y="170" font-size="11" fill="#3FB3CF" font-weight="600" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace" letter-spacing="1">04</text>
+<text x="614" y="192" font-size="15" fill="#E6EEF5" font-weight="600" text-anchor="start">Camera poses +</text>
+<text x="614" y="211" font-size="15" fill="#E6EEF5" font-weight="600" text-anchor="start">metric scale</text>
+<text x="614" y="233" font-size="10.5" fill="#9AAEC0" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace">COLMAP · Ceres · GPS</text>
+<rect x="420" y="342" width="160" height="100" rx="12" fill="#10263A" stroke="#21405C" stroke-width="1.5"/>
+<text x="434" y="366" font-size="11" fill="#3FB3CF" font-weight="600" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace" letter-spacing="1">05</text>
+<text x="434" y="388" font-size="15" fill="#E6EEF5" font-weight="600" text-anchor="start">Semantic</text>
+<text x="434" y="407" font-size="15" fill="#E6EEF5" font-weight="600" text-anchor="start">segmentation</text>
+<text x="434" y="429" font-size="10.5" fill="#9AAEC0" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace">SegFormer · UAVid</text>
+<rect x="600" y="342" width="160" height="100" rx="12" fill="#10263A" stroke="#21405C" stroke-width="1.5"/>
+<text x="614" y="366" font-size="11" fill="#3FB3CF" font-weight="600" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace" letter-spacing="1">06</text>
+<text x="614" y="388" font-size="15" fill="#E6EEF5" font-weight="600" text-anchor="start">Monocular</text>
+<text x="614" y="407" font-size="15" fill="#E6EEF5" font-weight="600" text-anchor="start">depth</text>
+<text x="614" y="429" font-size="10.5" fill="#9AAEC0" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace">Depth Anything V2</text>
+<rect x="800" y="232" width="160" height="124" rx="12" fill="#15304A" stroke="#3FB3CF" stroke-width="2" filter="url(#glow)"/>
+<text x="814" y="256" font-size="11" fill="#3FB3CF" font-weight="600" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace" letter-spacing="1">07</text>
+<text x="814" y="278" font-size="16" fill="#E6EEF5" font-weight="600" text-anchor="start">Scale</text>
+<text x="814" y="297" font-size="16" fill="#E6EEF5" font-weight="600" text-anchor="start">alignment</text>
+<text x="814" y="343" font-size="10.5" fill="#9AAEC0" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace">robust a·d + b fit</text>
+<path d="M200,294 L218,294" fill="none" stroke="#9AAEC0" stroke-width="1.8" marker-end="url(#arrow)"/>
+<path d="M382,278 C400,278 396,196 416,196" fill="none" stroke="#9AAEC0" stroke-width="1.8" marker-end="url(#arrow)"/>
+<path d="M382,310 C400,310 396,392 416,392" fill="none" stroke="#9AAEC0" stroke-width="1.8" marker-end="url(#arrow)"/>
+<path d="M580,196 L596,196" fill="none" stroke="#9AAEC0" stroke-width="1.8" marker-end="url(#arrow)"/>
+<path d="M580,392 L596,392" fill="none" stroke="#9AAEC0" stroke-width="1.8" marker-end="url(#arrow)"/>
+<path d="M760,196 C784,196 776,278 796,278" fill="none" stroke="#3FB3CF" stroke-width="2" marker-end="url(#arrowTeal)"/>
+<path d="M760,392 C784,392 776,310 796,310" fill="none" stroke="#FF7A66" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M470,340 L470,250" fill="none" stroke="#5F7488" stroke-width="1.5" stroke-dasharray="5 5" marker-end="url(#arrow)"/>
+<text x="478" y="286" font-size="10" fill="#5F7488" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace">masks cars, people,</text>
+<text x="478" y="300" font-size="10" fill="#5F7488" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace">sky before poses</text>
+<rect x="995" y="140" width="165" height="42" rx="9" fill="#10263A" stroke="#21405C" stroke-width="1.2"/>
+<text x="1007" y="165" font-size="10.5" fill="#3FB3CF" font-weight="600" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace">08</text>
+<text x="1033" y="165" font-size="12.5" fill="#E6EEF5" font-weight="500" text-anchor="start">Fusion + confidence</text>
+<rect x="995" y="188" width="165" height="42" rx="9" fill="#10263A" stroke="#21405C" stroke-width="1.2"/>
+<text x="1007" y="213" font-size="10.5" fill="#3FB3CF" font-weight="600" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace">09</text>
+<text x="1033" y="213" font-size="12.5" fill="#E6EEF5" font-weight="500" text-anchor="start">Mesh extraction</text>
+<rect x="995" y="236" width="165" height="42" rx="9" fill="#10263A" stroke="#21405C" stroke-width="1.2"/>
+<text x="1007" y="261" font-size="10.5" fill="#3FB3CF" font-weight="600" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace">10</text>
+<text x="1033" y="261" font-size="12.5" fill="#E6EEF5" font-weight="500" text-anchor="start">Building completion</text>
+<rect x="995" y="284" width="165" height="42" rx="9" fill="#10263A" stroke="#21405C" stroke-width="1.2"/>
+<text x="1007" y="309" font-size="10.5" fill="#3FB3CF" font-weight="600" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace">11</text>
+<text x="1033" y="309" font-size="12.5" fill="#E6EEF5" font-weight="500" text-anchor="start">Texture + seams</text>
+<rect x="995" y="332" width="165" height="42" rx="9" fill="#10263A" stroke="#21405C" stroke-width="1.2"/>
+<text x="1007" y="357" font-size="10.5" fill="#3FB3CF" font-weight="600" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace">12</text>
+<text x="1033" y="357" font-size="12.5" fill="#E6EEF5" font-weight="500" text-anchor="start">Georeference + export</text>
+<rect x="995" y="380" width="165" height="42" rx="9" fill="#10263A" stroke="#21405C" stroke-width="1.2"/>
+<text x="1007" y="405" font-size="10.5" fill="#3FB3CF" font-weight="600" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace">13</text>
+<text x="1033" y="405" font-size="12.5" fill="#E6EEF5" font-weight="500" text-anchor="start">Analysis overlays</text>
+<rect x="995" y="428" width="165" height="42" rx="9" fill="#10263A" stroke="#21405C" stroke-width="1.2"/>
+<text x="1007" y="453" font-size="10.5" fill="#3FB3CF" font-weight="600" text-anchor="start" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace">14</text>
+<text x="1033" y="453" font-size="12.5" fill="#E6EEF5" font-weight="500" text-anchor="start">Serve + spatial query</text>
+<path d="M960,294 L978,294" fill="none" stroke="#9AAEC0" stroke-width="1.8" marker-end="url(#arrow)"/>
+<path d="M985,144 L982,144 L982,452 L985,452" fill="none" stroke="#5F7488" stroke-width="1.5"/>
+<text x="40" y="528" font-size="13" fill="#9AAEC0" font-weight="400" text-anchor="start">AI depth is complete but has no scale. Sparse geometry has scale but is full of holes. Step 7 makes each fix the other.</text>
+</svg>
